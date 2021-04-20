@@ -40,3 +40,28 @@ const accordeonHead = document.querySelectorAll('.questions-accordeon__item-head
 		});
 	}
 
+// ----------------------test popups-------------------------
+
+const overlay = document.querySelector('.overlay__pop-ups');
+const close = document.querySelector('.popup-close-doc');
+
+
+document.querySelector('#test1').addEventListener('click', function(){
+	document.querySelector('.popup-short--documentation').classList.add('active');
+		overlay.classList.add('active');
+});
+
+document.querySelector('.popup-close-doc').addEventListener('click', function(){
+	document.querySelector('.popup-short--documentation').classList.remove('active');
+		overlay.classList.remove('active');
+});
+
+document.querySelector('#test2').addEventListener('click', function(){
+	document.querySelector('.popup-short--find-result').classList.add('active');
+		overlay.classList.add('active');
+});
+
+document.querySelector('.popup-close-find').addEventListener('click', function(){
+	document.querySelector('.popup-short--find-result').classList.remove('active');
+		overlay.classList.remove('active');
+});

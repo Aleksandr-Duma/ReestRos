@@ -466,6 +466,11 @@ ul {
   color: #787878;
   white-space: nowrap;
   background-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   border: 1px solid #787878;
   border-radius: 5px;
   outline: none;
@@ -577,6 +582,11 @@ ul {
   background-image: url(../img/red-search.svg);
   background-repeat: no-repeat;
   background-position: 0px center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   padding: 5px 42px 5px 30px;
   cursor: pointer;
 }
@@ -600,6 +610,11 @@ ul {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   padding: 0;
   display: none;
 }
@@ -1363,6 +1378,10 @@ ul {
   display: none;
 }
 
+.overlay__pop-ups.active {
+  display: block;
+}
+
 .popup-close {
   font-size: 42px;
   line-height: 0.8;
@@ -1715,6 +1734,10 @@ ul {
   padding: 70px 45px 20px 45px;
 }
 
+.popup-short--proccess.active {
+  display: block;
+}
+
 .popup-short--nofind {
   display: none;
 }
@@ -1736,6 +1759,10 @@ ul {
   padding: 30px 0 48px 0;
 }
 
+.popup-short--find-result.active {
+  display: block;
+}
+
 .popup-short--documentation {
   display: none;
 }
@@ -1746,6 +1773,10 @@ ul {
 
 .popup-short--documentation .popup-short__footer-button {
   padding: 21px 60px 21px 60px;
+}
+
+.popup-short--documentation.active {
+  display: block;
 }
 
 /*------------------media----------------*/
