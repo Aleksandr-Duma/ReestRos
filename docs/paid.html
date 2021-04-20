@@ -11,29 +11,62 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="container header__container">
-				<a href="#" class="logo">
-					<img src="img/logo.svg" alt="logo">
-				</a>
 				<nav class="header__nav header-nav">
+					<a href="index.html" class="logo">
+						<img src="img/logo.svg" alt="logo">
+					</a>
 					<ul class="header-nav__list">
-						<li class="header-nav__list-item">
-							<a href="#" class="header-nav__list-link">Как получить выписку</a>
+						<li class="header-nav__list-item--mobile mobile-menu__head">
+							<a href="#" class="logo logo-mobile">
+								<img src="img/logo.svg" alt="logo">
+							</a>
+							<button class="close-menu"></button>
+						</li>
+						<li class="header-nav__list-item header-nav__list-item--mobile">
+							<button class="search-object">Найти объкет</button>
+						</li>
+						<li class="header-nav__list-item header-nav__list-item--mobile">
+							<a href="#" class="header-nav__list-link">Почему выбирают нас</a>
+						</li>
+						<li class="header-nav__list-item header-nav__list-item--mobile">
+							<a href="#" class="header-nav__list-link">Когда и зачем нужна выписка</a>
 						</li>
 						<li class="header-nav__list-item">
-							<a href="#" class="header-nav__list-link">Частые вопросы</a>
+							<a href="#" class="header-nav__list-link header-nav__list-item--mobile">Как получить выписку</a>
+						</li>
+						<li class="header-nav__list-item">
+							<a href="#" class="header-nav__list-link header-nav__list-item--mobile">Частые вопросы</a>
+						</li>
+						<li class="header-nav__list-item">
+							<button class="button-partner">Партнерская программа</button>
 						</li>
 					</ul>
-					<button class="button-partner">Партнерская программа</button>
+					<button class="button-burger">
+						<span class="button-burger__item"></span>
+						<span class="button-burger__item"></span>
+						<span class="button-burger__item"></span>
+					</button>
 				</nav>
 			</div>
 		</header>
 		<main class="main">
-			
+			<section class="payment-banner">
+				<div class="container payment-banner__container">
+					<div class="payment-banner__inner">
+						<div class="payment-banner__img--payed">
+							<img src="img/credit-card.png" alt="credit-card">
+						</div>
+						<h2 class="payment-banner__title">Спасибо, оплата прошла успешно!</h2>
+						<p class="payment-banner__description">Как только выписка будет готова, мы пришлем  ее вам на указанный почтовый адрес.</p>
+						<a href="#" class="button payment-banner__button">Вернуться на главную</a>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="container footer__container">
 				<div class="footer__content">
-					<a href="#" class="logo">
+					<a href="#" class="footer-logo">
 						<img src="img/logo.svg" alt="logo">
 					</a>
 					<nav class="footer__nav footer-nav">
@@ -51,18 +84,18 @@
 								<a href="#" class="footer-nav__list-link">Частые вопросы</a>
 							</li>
 						</ul>
-						<div class="footer__police">
-							<a href="#" class="footer__police-link">Пользовательское соглашение</a>
-							<a href="#" class="footer__police-link">Политика конфиденциальности</a>
+						<div class="footer__wrap-item">
+							<div class="footer__police">
+								<a href="#" class="footer__police-link">Пользовательское соглашение</a>
+								<a href="#" class="footer__police-link">Политика конфиденциальности</a>
+							</div>
+							<button class="button-partner">Партнерская программа</button>
 						</div>
-						<button class="button-partner">Партнерская программа</button>
 					</nav>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src = "js/libs.min.js"></script>
 	<script src = "js/main.js"></script>
 </body>
 </html>

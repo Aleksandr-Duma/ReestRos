@@ -40,11 +40,3 @@ const accordeonHead = document.querySelectorAll('.questions-accordeon__item-head
 		});
 	}
 
-
-
-
-
-
-$(function(){
-
-});
