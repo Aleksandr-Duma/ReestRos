@@ -23,7 +23,7 @@
 							<button class="close-menu"></button>
 						</li>
 						<li class="header-nav__list-item header-nav__list-item--mobile">
-							<button id="test2" class="search-object">Найти объкет</button>
+							<button class="search-object">Найти объкет</button>
 						</li>
 						<li class="header-nav__list-item header-nav__list-item--mobile">
 							<a href="#offer" class="header-nav__list-link">Почему выбирают нас</a>
@@ -38,7 +38,7 @@
 							<a href="#questions" class="header-nav__list-link">Частые вопросы</a>
 						</li>
 						<li class="header-nav__list-item">
-							<button id="test1" class="button-partner">Партнерская программа</button>
+							<button class="button-partner">Партнерская программа</button>
 						</li>
 					</ul>
 					<button class="button-burger">
@@ -64,10 +64,10 @@
 						</div>
 						<div class="banner-inner__bottom-content">
 							<p class="banner-inner__form-description">Введите адрес или кадастровый номер</p>
-							<form class="banner-inner__form">
+							<div class="banner-inner__form">
 								<input class="banner-inner__form-input" type="text" placeholder="Москва, ул.Кремль, д 1 или 77:04:0002010:1101">
-								<button class="button banner-inner__form-button">Найти объкет</button>
-							</form>
+								<button class="button banner-inner__form-button find-obj">Найти объкет</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -134,7 +134,7 @@
 						</ul>
 					</div>
 					<div class="advantages__button-wrap">
-						<button class="button order__button">Заказать выписку онлайн</button>
+						<button class="button order__button" id="order-docs">Заказать выписку онлайн</button>
 					</div>	
 				</div>
 			</section>
@@ -218,7 +218,7 @@
 						</div>
 					</div>
 					<div class="questions__button-wrap">
-						<button class="button order__button">Заказать выписку онлайн</button>
+						<button class="button order__button" id="order-docs2">Заказать выписку онлайн</button>
 					</div>
 				</div>
 			</section>
@@ -246,8 +246,8 @@
 						</ul>
 						<div class="footer__wrap-item">
 							<div class="footer__police">
-								<a href="paid.html" class="footer__police-link">Пользовательское соглашение</a>
-								<a href="unpaid.html" class="footer__police-link">Политика конфиденциальности</a>
+								<a href="#" class="footer__police-link">Пользовательское соглашение</a>
+								<a href="#" class="footer__police-link">Политика конфиденциальности</a>
 							</div>
 							<button class="button-partner">Партнерская программа</button>
 						</div>
@@ -255,149 +255,246 @@
 				</div>
 			</div>
 		</footer>
-		<!-- POP-UPS -->
-		<div class="overlay__pop-ups"></div>
-		<!-- POP-UPS PROCCESS -->
-		<div class="popup-short popup-short--proccess">
-			<button class="popup-close">&times;</button>
-			<div class="popup-short__head">Результаты поиска</div>
-			<div class="popup-short__body">
-				<h3 class="popup__title">Подождите, пожалуйста</h3>
-				<p class="popup__description">Идет поиск объекта недвижимости...</p>
-				<div class="popup-short__img">
-					<img src="img/update-arrow.svg" alt="update-arrow">
-				</div>
-			</div>
-		</div>
-		<!-- POP-UPS NO-FIND -->
-		<div class="popup-short popup-short--nofind">
-			<button class="popup-close">&times;</button>
-			<div class="popup-short__head">
-				Результаты поиска
-				<div class="pop-up-count-wrap">
-					Найдено объектов: <span class="pop-up-count">0</span>  
-				</div>
-			</div>
-			<div class="popup-short__body">
-				<h3 class="popup__title">К сожалению, мы не смогли ничего найти</h3>
-				<p class="popup__description">Возможно, во время ввода адреса или кадастрового номера была допущена ошибка. 
-				<span class="popup__description--subtext">Попробуйте еще раз.</span></p>
-				<button class="button">Найти объкет</button>
-			</div>
-		</div>
-		<!-- POP-UPS FIND-RESULT -->
-		<div class="popup-short popup-short--find-result">
-			<button class="popup-close popup-close-find">&times;</button>
-			<div class="popup-short__head">
-				Результаты поиска
-				<div class="pop-up-count-wrap">
-					Найдено объектов: <span class="pop-up-count">17</span>  
-				</div>
-			</div>
-			<div class="popup-short__body">
-				<ul class="popup-short__body-list popup-short-list">
-					<li class="popup-short-list__item active">
-						<div class="block-checkbox">
-							<input class = "checkbox-input" type="checkbox" id = "checkbox-1" checked="">
-							<label class = "checkbox-label" for = "checkbox-1"></label>
-						</div>
-						<div class="popup-short-list__content">
-							г. Санкт-Петербург, ул. Маяковского, дом 30, кв. 14 (Жилое помещение, квартира)
-							<p class="popup-short-list__content-number">07:09:0000000:18467</p>
-						</div>
-					</li>
-					<li class="popup-short-list__item">
-						<div class="block-checkbox">
-							<input class = "checkbox-input" type="checkbox" id = "checkbox-2">
-							<label class = "checkbox-label" for = "checkbox-2"></label>
-						</div>
-						<div class="popup-short-list__content">
-							г. Санкт-Петербург, ул. Маяковского, дом 30, кв. 14 (Жилое помещение, квартира)
-							<p class="popup-short-list__content-number">07:09:0000000:18467</p>
-						</div>
-					</li>
-					<li class="popup-short-list__item">
-						<div class="block-checkbox">
-							<input class = "checkbox-input" type="checkbox" id = "checkbox-3">
-							<label class = "checkbox-label" for = "checkbox-3"></label>
-						</div>
-						<div class="popup-short-list__content">
-							г. Санкт-Петербург, ул. Маяковского, дом 30, кв. 14 (Жилое помещение, квартира)
-							<p class="popup-short-list__content-number">07:09:0000000:18467</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="popup-short__footer">
-				<button class="button popup-short__footer-button">Выбрать</button>
-			</div>	
-		</div>
-		<!-- POP-UPS DOCUMENTATION -->
-		<div class="popup-short popup-short--documentation">
-			<button class="popup-close popup-close-doc">&times;</button>
-			<div class="popup-short__head popup-head-documentation">
-				<div class="popup-head-documentation__top">
-					г. Санкт-Петербург, ул. Маяковского, дом 30, кв. 14 (Жилое помещение, квартира)
-					<p class="popup-head-documentation__number">07:09:0000000:18467</p>
-				</div>
-				<div class="popup-head-documentation__bottom">
-					<div class="popup-head-documentation__bottom-item">
-						<span class="bold-text">Дата учета:</span> 03.07.2011
-					</div>
-					<div class="popup-head-documentation__bottom-item">
-						<span class="bold-text">Площадь:</span> 76м2
-					</div>
-					<div class="popup-head-documentation__bottom-item">
-						<span class="bold-text">Кадастровая стоимость:</span> 5 605 039,48 руб.
+	<!-- POP-UPS FIND-->
+		<div class="popup popup-find">
+			<div class="popup__inner">
+				<div class="popup__content">
+					<button class="popup__close">&times;</button>
+					<div class="popup__header">Результаты поиска</div>
+					<div class="popup__body">
+						<h3 class="popup__title">Подождите, пожалуйста</h3>
+						<p class="popup__description">Идет поиск объекта недвижимости...</p>
+						<img src="img/update-arrow.svg" alt="update-arrow">
 					</div>
 				</div>
 			</div>
-			<div class="popup-short__body">
-				<ul class="popup-documentation__list">
-					<li class="popup-documentation__list-item">
-						<div class="popup-documentation__checkbox-wrap">
-							<input class="checkbox-doc" type="checkbox" id="checkbox-a"/>
-							<label class="label-doc" for="checkbox-a"></label>
+		</div>
+	<!-- POP-UPS PROCCESS -->
+		<div class="popup popup-proccess">
+			<div class="popup__inner">
+				<div class="popup__content">
+					<button class="popup__close">&times;</button>
+					<div class="popup__header">
+						Результаты поиска
+						<div class="popup__count-wrap">
+							Найдено объектов: <span class="popup__count">0</span>  
 						</div>
-						<div class="popup-documentation__content">
-							<div class="popup-documentation__content-head">
-								<span class="popup-documentation__content-title">Выписка из ЕГРН</span>
-								<span class="popup-documentation__content-cost">75 руб.</span>	
+					</div>
+					<div class="popup__body">
+						<h3 class="popup__title">К сожалению, мы не смогли ничего&nbsp;найти</h3>
+						<p class="popup__description">Возможно, во время ввода адреса или кадастрового номера была допущена ошибка. 
+						<span class="popup__description--subtext">Попробуйте еще раз.</span></p>
+						<button class="button">Найти объкет</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- POP-UPS RESULT -->
+		<div class="popup popup-result">
+			<div class="popup__inner">
+				<div class="popup__content">
+					<button class="popup__close">&times;</button>
+					<div class="popup__header">
+						Результаты поиска
+						<div class="popup__count-wrap success">
+							Найдено объектов: <span class="popup__count">17</span>  
+						</div>
+					</div>
+					<div class="popup__body">
+						<ul class="popup-result__list">
+							<li class="popup-result__list-item">
+								<div class="popup-result__list-radio">
+									<input class="custom-radio" type="radio" id="radio-1" name="result">
+    								<label for="radio-1"></label>
+								</div>
+								<div class="popup-result__list-content">
+									<div class="popup-result__object-address">
+										г. Санкт-Петербург, ул. Маяковского, дом 30, кв. 14 (Жилое помещение, квартира)
+									</div>
+									<div class="popup-result__object-number">07:09:0000000:18467</div>
+								</div>
+							</li>
+							<li class="popup-result__list-item">
+								<div class="popup-result__list-radio">
+									<input class="custom-radio" type="radio" id="radio-2" name="result">
+    								<label for="radio-2"></label>
+								</div>
+								<div class="popup-result__list-content">
+									<div class="popup-result__object-address">
+										г. Санкт-Петербург, ул. Маяковского, дом 30, кв. 14 (Жилое помещение, квартира)
+									</div>
+									<div class="popup-result__object-number">07:09:0000000:18467</div>
+								</div>
+							</li>
+							<li class="popup-result__list-item">
+								<div class="popup-result__list-radio">
+									<input class="custom-radio" type="radio" id="radio-3" name="result">
+    								<label for="radio-3"></label>
+								</div>
+								<div class="popup-result__list-content">
+									<div class="popup-result__object-address">
+										г. Санкт-Петербург, ул. Маяковского, дом 30, кв. 14 (Жилое помещение, квартира)
+									</div>
+									<div class="popup-result__object-number">07:09:0000000:18467</div>
+								</div>
+							</li>
+							<li class="popup-result__list-item">
+								<div class="popup-result__list-radio">
+									<input class="custom-radio" type="radio" id="radio-4" name="result">
+    								<label for="radio-4"></label>
+								</div>
+								<div class="popup-result__list-content">
+									<div class="popup-result__object-address">
+										г. Санкт-Петербург, ул. Маяковского, дом 30, кв. 14 (Жилое помещение, квартира)
+									</div>
+									<div class="popup-result__object-number">07:09:0000000:18467</div>
+								</div>
+							</li>
+							<li class="popup-result__list-item">
+								<div class="popup-result__list-radio">
+									<input class="custom-radio" type="radio" id="radio-5" name="result">
+    								<label for="radio-5"></label>
+								</div>
+								<div class="popup-result__list-content">
+									<div class="popup-result__object-address">
+										г. Санкт-Петербург, ул. Маяковского, дом 30, кв. 14 (Жилое помещение, квартира)
+									</div>
+									<div class="popup-result__object-number">07:09:0000000:18467</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="popup__footer">
+						<button class="button popup__footer-button">Выбрать</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- POP-UPS DOCS WITHOUT FORM-->
+		<div class="popup popup-docs">
+			<div class="popup__inner">
+				<div class="popup__content">
+					<button class="popup__close">&times;</button>
+					<div class="popup-docs__header">
+						<div class="popup-docs__header-top">
+							<p class="popup-docs__object-address">г. Санкт-Петербург, ул. Маяковского, дом 30, кв. 14 (Жилое помещение, квартира)</p>
+							<p class="popup-docs__object-number">07:09:0000000:18467</p>
+						</div>
+						<div class="popup-docs__header-bottom">
+							<div class="popup-docs__header-item">
+								<span class="bold-text">Дата учета:</span> 03.07.2011
 							</div>
-							<p class="popup-documentation__content-text">Информация о собственнике и наличии обременений (запретов/арестов/ипотеки)</p>
-							<span class="popup-documentation__content-cost hidden-span">75 руб.</span>
-						</div>
-					</li>
-					<li class="popup-documentation__list-item">
-						<div class="popup-documentation__checkbox-wrap">
-							<input class="checkbox-doc" type="checkbox" id="checkbox-b"/>
-							<label class="label-doc" for="checkbox-b"></label>
-						</div>
-						<div class="popup-documentation__content">
-							<div class="popup-documentation__content-head">
-								<span class="popup-documentation__content-title">Выписка из ЕГРН о переходе прав</span>
-								<span class="popup-documentation__content-cost">75 руб.</span>	
+							<div class="popup-docs__header-item">
+								<span class="bold-text">Площадь:</span> 76м2
 							</div>
-							<p class="popup-documentation__content-text">История купли-продажи объекта, информация обо всех предыдущих владельцах с 1998 г.</p>
-							<span class="popup-documentation__content-cost hidden-span">75 руб.</span>
+							<div class="popup-docs__header-item">
+								<span class="bold-text">Кадастровая стоимость:</span> 5 605 039,48 руб.
+							</div>
 						</div>
-					</li>
-				</ul>
-				<form class="popup-documentation-form">
-					<p class="popup-documentation-form__title">Email для отправки выписки(ок)</p>
-					<input class="popup-documentation-form__input" type="text" placeholder="mail@mail.ru">
-					<div class="form-checkbox-wrap">
-						<input class="checkbox-doc" type="checkbox" id="checkbox-c"/>
-						<label class="label-doc" for="checkbox-c"></label>
-						<p class="checkbox-label-text">SMS сообщение о готовности</p>
 					</div>
-					<input class="popup-documentation-form__input" type="text" placeholder="+7(999) 999-99-99">
-				</form>
+					<div class="popup__body popup-docs__body">
+						<ul class="popup-docs__list">
+							<li class="popup-docs__list-item">
+								<div class="popup-docs__content-wrap">			
+									<div class="popup-docs__checkbox">
+									    <input class="custom-checkbox" type="checkbox" id="docs-1" name="docs-1">
+									    <label for="docs-1"></label>
+									</div>
+									<div class="popup-docs__list-content">
+										<h4 class="popup-docs__list-title">Выписка из ЕГРН</h4>
+										<p class="popup-docs__list-text">Информация о собственнике и наличии обременений (запретов/арестов/ипотеки)</p>
+									</div>
+								</div>
+								<div class="popup-docs__list-price">75 руб.</div>
+							</li>
+							<li class="popup-docs__list-item">
+								<div class="popup-docs__content-wrap">
+									<div class="popup-docs__checkbox">
+									    <input class="custom-checkbox" type="checkbox" id="docs-2" name="docs-2">
+									    <label for="docs-2"></label>
+									</div>
+									<div class="popup-docs__list-content">
+										<h4 class="popup-docs__list-title">Выписка из ЕГРН о переходе прав</h4>
+										<p class="popup-docs__list-text">История купли-продажи объекта, информация обо всех предыдущих владельцах с 1998 г.</p>
+									</div>
+								</div>
+								<div class="popup-docs__list-price">75 руб.</div>
+							</li>
+						</ul>
+					</div>
+					<div class="popup__footer">
+						<button class="button popup__footer-button disabled">Заказать и оплатить 150 руб.</button>
+					</div>
+				</div>
 			</div>
-			<div class="popup-short__footer">
-				<button class="button popup-short__footer-button">Заказать и оплатить 150 руб.</button>
-			</div>	
 		</div>
+	<!-- POP-UPS DOCS WITH FORM-->
+		<div class="popup popup-docs popup-docs-form">
+			<div class="popup__inner">
+				<div class="popup__content">
+					<button class="popup__close">&times;</button>
+					<div class="popup-docs__header">
+						<div class="popup-docs__header-top">
+							<p class="popup-docs__object-address">г. Санкт-Петербург, ул. Маяковского, дом 30, кв. 14 (Жилое помещение, квартира)</p>
+							<p class="popup-docs__object-number">07:09:0000000:18467</p>
+						</div>
+						<div class="popup-docs__header-bottom">
+							<div class="popup-docs__header-item">
+								<span class="bold-text">Дата учета:</span> 03.07.2011
+							</div>
+							<div class="popup-docs__header-item">
+								<span class="bold-text">Площадь:</span> 76м2
+							</div>
+							<div class="popup-docs__header-item">
+								<span class="bold-text">Кадастровая стоимость:</span> 5 605 039,48 руб.
+							</div>
+						</div>
+					</div>
+					<div class="popup__body popup-docs__body">
+						<ul class="popup-docs__list">
+							<li class="popup-docs__list-item">
+								<div class="popup-docs__content-wrap">			
+									<div class="popup-docs__checkbox">
+									    <input class="custom-checkbox" type="checkbox" id="docs-3" name="docs-3">
+									    <label for="docs-3"></label>
+									</div>
+									<div class="popup-docs__list-content">
+										<h4 class="popup-docs__list-title">Выписка из ЕГРН</h4>
+										<p class="popup-docs__list-text">Информация о собственнике и наличии обременений (запретов/арестов/ипотеки)</p>
+									</div>
+								</div>
+								<div class="popup-docs__list-price">75 руб.</div>
+							</li>
+							<li class="popup-docs__list-item">
+								<div class="popup-docs__content-wrap">
+									<div class="popup-docs__checkbox">
+									    <input class="custom-checkbox" type="checkbox" id="docs-4" name="docs-4">
+									    <label for="docs-4"></label>
+									</div>
+									<div class="popup-docs__list-content">
+										<h4 class="popup-docs__list-title">Выписка из ЕГРН о переходе прав</h4>
+										<p class="popup-docs__list-text">История купли-продажи объекта, информация обо всех предыдущих владельцах с 1998 г.</p>
+									</div>
+								</div>
+								<div class="popup-docs__list-price">75 руб.</div>
+							</li>
+						</ul>
+						<form class="popup-docs__form">
+							<h4 class="popup-docs__form__title">Email для отправки выписки(ок)</h4>
+							<input class="popup-docs__form-input" type="text" placeholder="mail@mail.ru">
+							<div class="popup-docs__form-checkbox">
+								<input class="custom-checkbox checkbox-form" type="checkbox" id="docs-f" name="docs-f">
+								<label for="docs-f">SMS сообщение о готовности</label>
+							</div>
+							<input class="popup-docs__form-input" type="text" placeholder="+7(999) 999-99-99">
+						</form>
+					</div>
+					<div class="popup__footer">
+						<button class="button popup__footer-button">Заказать и оплатить 150 руб.</button>
+					</div>
+				</div>
+			</div>
+		</div>		
 	</div>
 	<script src = "js/main.js"></script>
 </body>

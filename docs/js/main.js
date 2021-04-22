@@ -26,42 +26,34 @@ const accordeonHead = document.querySelectorAll('.questions-accordeon__item-head
 	});
 
 // ----------------------smooth scrolling-------------------------
-	const links = document.querySelectorAll('a[href^="#"]');
+	// const links = document.querySelectorAll('a[href^="#"]');
 
-	for(let i = 0; i < links.length; i++){
-		links[i].addEventListener('click', function(event){
-			event.preventDefault();
-			const blockId = event.target.getAttribute('href').substr(1);
+	// for(let i = 0; i < links.length; i++){
+	// 	links[i].addEventListener('click', function(event){
+	// 		event.preventDefault();
+	// 		const blockId = event.target.getAttribute('href').substr(1);
 
-			document.getElementById(blockId).scrollIntoView({
-				behavior: 'smooth',
-				block: 'start'
-			});
-		});
-	}
+	// 		document.getElementById(blockId).scrollIntoView({
+	// 			behavior: 'smooth',
+	// 			block: 'start'
+	// 		});
+	// 	});
+	// }
 
 // ----------------------test popups-------------------------
 
-const overlay = document.querySelector('.overlay__pop-ups');
-const close = document.querySelector('.popup-close-doc');
+const openPopup = document.querySelector('.find-obj');
+const popup = document.querySelector('.popup-find');
 
+	openPopup.addEventListener('click', function(){
+		popup.classList.add('open');
+	});
 
-document.querySelector('#test1').addEventListener('click', function(){
-	document.querySelector('.popup-short--documentation').classList.add('active');
-		overlay.classList.add('active');
-});
+const close = document.querySelectorAll('.popup__close');
 
-document.querySelector('.popup-close-doc').addEventListener('click', function(){
-	document.querySelector('.popup-short--documentation').classList.remove('active');
-		overlay.classList.remove('active');
-});
+for (let i = 0; i < close.length; i++){
+	close[i].addEventListener('click', function(){
+		popup.classList.remove('open');
+	});
+};
 
-document.querySelector('#test2').addEventListener('click', function(){
-	document.querySelector('.popup-short--find-result').classList.add('active');
-		overlay.classList.add('active');
-});
-
-document.querySelector('.popup-close-find').addEventListener('click', function(){
-	document.querySelector('.popup-short--find-result').classList.remove('active');
-		overlay.classList.remove('active');
-});
