@@ -26,19 +26,19 @@ const accordeonHead = document.querySelectorAll('.questions-accordeon__item-head
 	});
 
 // ----------------------smooth scrolling-------------------------
-	// const links = document.querySelectorAll('a[href^="#"]');
+	const links = document.querySelectorAll('a[href^="#"]');
 
-	// for(let i = 0; i < links.length; i++){
-	// 	links[i].addEventListener('click', function(event){
-	// 		event.preventDefault();
-	// 		const blockId = event.target.getAttribute('href').substr(1);
+	for(let i = 0; i < links.length; i++){
+		links[i].addEventListener('click', function(event){
+			event.preventDefault();
+			const blockId = event.target.getAttribute('href').substr(1);
 
-	// 		document.getElementById(blockId).scrollIntoView({
-	// 			behavior: 'smooth',
-	// 			block: 'start'
-	// 		});
-	// 	});
-	// }
+			document.getElementById(blockId).scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			});
+		});
+	}
 
 // ----------------------test popups-------------------------
 
